@@ -24,7 +24,6 @@ class AI():
     def miniMax(self, depth, player, alpha, beta):
         otherPlayer = 'MINIMIZER' if player == 'MAXIMIZER' else 'MAXIMIZER'
         bestMove = None
-        test = None
         if(self.gameManager.checkState() != 'STILL ARE MOVES'):
             if(player == 'MAXIMIZER'):
                 return -math.inf
